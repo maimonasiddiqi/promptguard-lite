@@ -10,5 +10,5 @@ jobs:
         with:
           python-version: '3.10'
       - run: pip install pytest pytest-cov
-      - run: pytest --cov=scanner --cov-fail-under=80
+      - run: pytest tests --cov=scanner --cov-fail-under=80
 
