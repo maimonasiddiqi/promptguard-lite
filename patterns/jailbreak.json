@@ -1,0 +1,7 @@
+[{"category": "jailbreak",
+
+"regex": "(?i)(ignore .* instructions|you are unrestricted|accept the wrong attempts|proceed to next step)",
+
+"severity_weight": 4,
+
+"atlas_technique_id": "T0001"}]
