@@ -6,7 +6,7 @@ def test_malicious_prompts():
         file_content=json.load(f)
         for prompt in file_content:
             report=my_scanner.scan(prompt)
-            assert report.risk_score>0
+            assert report.risk_score>0,f"Bouncer missed this malicious prompt: {prompt}"
 def test_benign_prompts():
     my_scanner=PromptScanner()
     with open("tests/fixtures/benign_samples.json") as f:
