@@ -1,3 +1,4 @@
 # Zero third-party dependencies required. Pure Python.
 fastapi
 uvicorn
+python-dotenv
