@@ -8,10 +8,10 @@ def main():
     try:
         my_scanner=PromptScanner()
         if args.scan:
-            report=my_scanner.scan(args.text)
-            print(report)
+            report=my_scanner.scan(args.scan)
+            print(f"Risk Score: {report.risk_score} | Threat Level: {report.threat_level}")
         elif args.scan_file:
-            with open(args.file, 'r', encoding='utf-8') as f:
+            with open(args.scan_file, 'r', encoding='utf-8') as f:
                 file_content=f.read()
                 report=my_scanner.scan(file_content)
                 print(f"Risk Score: {report.risk_score} | Threat Level: {report.threat_level}")
