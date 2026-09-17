@@ -6,6 +6,6 @@ try:
         if prompt in ['exit', 'quit']:
             break
         report=my_scanner.scan(prompt)
-        print(report)
+        print(f"Risk Score: {report.risk_score} | Hits: {report.hits}")
 except KeyboardInterrupt:
-    print("\n Exiting the code bcz of wrong input")
+    print("\n Gracefully shutting down the code")
